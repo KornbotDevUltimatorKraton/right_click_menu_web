@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Dynamical context menu with custom context selector</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css'><link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+  <h2>Dynamical context menu with custom context selector</h2>
+  <div class="block">
+    <div class="clickable" data-context="share save copy cut paste print delete">
+      <button>Right-click me</button>
+    </div>
+  </div>
+  <div class="block">
+    <div class="clickable" data-context="share save copy cut paste print delete send">
+      <button>Or right-click me for different context</button>
+    </div>
+  </div>
+  <div class="block">
+    <div class="clickable" data-context="share save copy send">
+      <button>Or try to right-click me</button>
+    </div>
+  </div>
+</div>
+
+<div id="contextmenu">
+  <ul>
+    <li class="save"><i class="far fa-save"></i> Save</li>
+    <li class="copy"><i class="far fa-copy"></i> Copy</li>
+    <li class="cut"><i class="far fa-hand-scissors"></i> Cut</li>
+    <li class="paste"><i class="far fa-clipboard"></i> Paste</li>
+    <li class="share has-sub"><i class="fas fa-share-alt"></i> Share on...
+      <ul>
+        <li class="facebook"><i class="fab fa-facebook"></i> Facebook</li>
+        <li class="twitter"><i class="fab fa-twitter"></i> Twitter</li>
+        <li class="instagram"><i class="fab fa-instagram"></i> Instagram</li>
+      </ul>
+    </li>
+    <li class="send has-sub"><i class="far fa-paper-plane"></i> Send with...
+      <ul>
+        <li class="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</li>
+        <li class="messenger"><i class="fab fa-facebook-messenger"></i> Messenger</li>
+        <li class="email"><i class="far fa-envelope"></i> E-Mail</li>
+      </ul>
+    </li>
+    <li class="print"><i class="fas fa-print"></i> Print</li>
+    <li class="delete"><i class="far fa-trash-alt"></i> Delete</li>
+  </ul>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="static/script.js"></script>
+
+</body>
+</html>
